@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>时间</title>
+	<style type="text/css">
+		body{
+		   background:url(1.jpg)  no-repeat center center;
+		   background-size:cover;
+		   background-attachment:fixed;
+		   background-color:#CCCCCC;
+		}
+		p{
+			font-family:楷体;font-size:180px;color:aliceblue;text-align:center;line-height:2em;
+		}
+	</style>
+	</head>
+<body>
+
+	<p id="show" style=""></p>
+<div id="div2">
+		<p style="font-family:楷体;font-size:70px;text-align:center;">愿你所期待的美好都如约而至！</p>
+        <p style="font-family:楷体;font-size:30px;text-align:center;">When you understand life and self are not used to overcome but to get along! You will understand some things although not reasonable, but you must believe, they are strong, you must rely on!</p>
+	    <p style="font-family:楷体;font-size:30px;text-align:center;">han</p>	
+       </div>
+
+	<embed height="0" width="0" display="none"  src="依然爱你.mp3">
+</body>
+
+	<script type="text/javascript"> 
+		window.onload = function() {  
+				var show = document.getElementById("show");  
+				setInterval(function() {   
+				var time = new Date();   // 程序计时的月从0开始取值后+1   
+				var m = time.getMonth() + 1;   
+				var t = //time.getFullYear() + "-" + m + "-" + time.getDate() + " " + 
+				time.getHours() + ":"     
+				+ time.getMinutes() + ":" + time.getSeconds();   
+				show.innerHTML = t;  
+			}, 1000); 
+		};
+	</script>
+
+</html>
